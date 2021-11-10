@@ -23,26 +23,22 @@
         margin-bottom: 5px;
       }
 
-ol.bibliography > li {
- 
- list-style-type: none;
-}
 
 .navbar-inverse {
-  background-color: #00008B;
+  background-color: #243b2b;
  }
 
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #00008B;
+  color: #243b2b;
  background-color: #ffffff;
 }
 
 
 .navbar-inverse .navbar-nav > .active > a {
- color: #00008B;
+ color: #243b2b;
  background-color: #ffffff;
 }
 
