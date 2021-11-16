@@ -332,8 +332,8 @@ blockquote footer {
 }
 
 .pub-entry {
-    min-height: 120px;
-    margin-bottom: 30px
+    min-height: 100px;
+    margin-bottom: 10px
 }
 
 .pub-entry p {
