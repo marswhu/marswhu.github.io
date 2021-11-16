@@ -346,26 +346,26 @@ blockquote footer {
     float: right;
     vertical-align: middle
 }
-
+/* original width: 74% */
 .pub-title {
     font-size: .7rem;
     line-height: 1.5;
     margin-bottom: 5px;
-    width: 74%
+    width: 100%
 }
 
 .pub-authors {
     font-size: .65rem;
     line-height: 1.5;
     margin-bottom: 5px;
-    width: 74%
+    width: 100%
 }
 
 .pub-venue {
     font-size: .65rem;
     line-height: 1.5;
     margin-bottom: 5px;
-    width: 74%
+    width: 100%
 }
 
 .pub-description {
