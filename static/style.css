@@ -10,7 +10,8 @@ div#container {
 	padding-right: 20px;
 	/*margin-left: 15%;
 	margin-right: 15%; */
-	width: 1000px;
+	/* width: 1000px; */
+	width: 60%;
 	margin: 0 auto;
 	text-align: left;
 	/* position: relative; */
@@ -45,21 +46,27 @@ div#container {
 		border: #eee 0.5rem solid;
 	}
 
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 1200px) {
 		.student-container .student{
-			width: 45%;	
+			width: 30%;	
 		}
 
 		.student-container .student img{
-			width: 10rem;
-			height: 10rem;
-			border-radius: 5rem;
+			width: 12rem;
+			height: 12rem;
+			border-radius: 6rem;
 			border: #eee 0.3rem solid;
 		}
 	}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 800px) {
 		.student-container .student{
-			width: 100%;	
+			width: 50%;	
+		}
+		.student-container .student img{
+			width: 8rem;
+			height: 8rem;
+			border-radius: 4rem;
+			border: #eee 0.2rem solid;
 		}
 	}
