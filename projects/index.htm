@@ -5,7 +5,6 @@
   <meta name="author" content="MARS">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- <base href="http://www.comp.hkbu.edu.hk/~xinhuang/">-->
   <title>Projects</title>
 
 
@@ -59,44 +58,47 @@
     <h3>Software Packages</h3>
 
 
-    <h4>Re-ID Survey with AGW Baseline：</h4>
+    <h4>Re-ID Survey with AGW Baseline： <a href="https://arxiv.org/abs/2001.04193v2">PDF</a> <a href="https://github.com/mangye16/ReID-Survey">Code</a> </h4>
     <ul>
       <li>A comprehensive survey with in-depth analysis for closed- and open-world person Re-ID in recent years (2016-2020).</li>
       <li>A new evaluation metric, namely mean Inverse Negative Penalty (mINP), which measures the ability to find the hardest correct match.</li>
       <li>A new AGW baseline with non-local Attention block, Generalized mean pooling and Weighted regularization triplet. It acheieves competitive performance on FOUR challenging Re-ID tasks, including single-modality image-based Re-ID, video-based Re-ID, Partial Re-ID and cross-modality Re-ID.</li>
-      <li>Paper: Mang Ye et al., "Deep Learning for Person Re-identification: A Survey and Outlook", TPAMI 2021.</li>
-      <li><a href="https://arxiv.org/abs/2001.04193v2">arXiv</a>: PDF with supplementary materials. </li>
-      <li><a href="https://github.com/mangye16/ReID-Survey">Code</a>: Github repository </li>
+      <li>Paper: "Deep Learning for Person Re-identification: A Survey and Outlook", TPAMI 2021.</li>
+    </ul>
+    
+    <h4>Cross-modality Visible-Infrared Re-ID Baseline：<a href="https://github.com/mangye16/Cross-Modal-Re-ID-baseline">Code</a> </h4>
+    <ul>
+      <li> Cross-Modality Person Re-Identification (Visible Infrared Re-ID) Baseline on RegDB and SYSU-MM01 datasets</li>
+      <li> Channel augmentation with multi-modality joint training</li>
+      <li> Two-stream network with AGW baseline for cross-modality ReID</li>
+      <li> Paper: "Bi-directional Center-Constrained Top-Ranking for Visible Thermal Person Re-Identification", IIFS 2019.</li>
+      <li> Paper: "Channel Augmented Joint Learning for Visible-Infrared Recognition", ICCV 2021.</li>
+    </ul>
+    
+    <h4>Unsupervised Deep Learning：<a href="https://ieeexplore.ieee.org/document/9154587">PDF</a>, <a href="https://github.com/mangye16/Unsupervised_Embedding_Learning">Code</a></h4>
+    <ul>
+      <li> Instance discrimination: Positive concentration (data augmentation invariance) and negative separation (instance spread-out) </li>
+      <li> ``Real-time" instance feature softmax embedding, faster speed and higher accuracy </li>
+      <li> Positive supervision augmentation and negative supervision augmentation at feature level </li>
+      <li> Paper: "Unsupervised Embedding Learning via Invariant and Spreading Instance Feature", CVPR 2019.</li>
+      <li> Paper: "Augmentation Invariant and Instance Spreading Feature for Softmax Embedding", TPAMI 2020.</li>
     </ul>
 
-    <h4>WePerson Dataset</h4>
+    <h4>WePerson Dataset <a href="https://dl.acm.org/doi/pdf/10.1145/3474085.3475455">PDF</a>, <a href="https://github.com/lihe404/WePerson">Code</a></h4>
     <ul>
-      <li> this is the first large-scale synthesized Re-ID dataset that considers various weather effects. 
-        It allows factor-by-factor dissection for the domain generalizable feature learning, 
-        which is important for Re-ID model deployment under wild application scenarios. 
-        To date, this is the largest virtual dataset for person images.</li>
-      <li>Paper: He Li et al., "WePerson: Learning a Generalized Re-identification Model from All-weather Virtual Data", ACM MM, 2021.</li>
-      <li><a href="https://dl.acm.org/doi/pdf/10.1145/3474085.3475455">PDF</a>, <a href="https://github.com/lihe404/WePerson">Code</a></li>
-    </ul>
-
-    <h4>Cross-modality Visible-Infrared Re-ID：</h4>
-    <ul>
-      <li>Pytorch Code of AGW method for Cross-Modality Person Re-Identification (Visible Thermal Re-ID) on RegDB dataset and SYSU-MM01 dataset</li>
-      <li><a href="https://github.com/mangye16/Unsupervised_Embedding_Learning">Code</a></li>
+      <li> This is the first large-scale synthesized Re-ID dataset that considers various weather effects. </li>
+      <li> To date, this is the largest virtual dataset for person images.</li>
+      <li> Paper: "WePerson: Learning a Generalized Re-identification Model from All-weather Virtual Data", ACM MM, 2021.</li>
     </ul>
 
 
-    <h4>Unsupervised Deep Learning：</h4>
+    <h4>Robust Deep Learning with Label Noise：<a href="https://github.com/mangye16/ReID-Label-Noise">Code</a></h4>
     <ul>
-      <li>Paper: Mang Ye etal., "Unsupervised Embedding Learning via Invariant and Spreading Instance Feature", CVPR 2019.</li>
-      <li><a href="https://arxiv.org/abs/1904.03436">arXiv</a>, <a href="https://github.com/mangye16/Unsupervised_Embedding_Learning">Code</a></li>
-   
-    </ul>
-
-    <h4>Robust Deep Learning with Label Noise：</h4>
-    <ul>
-      <li>Demo Code for refining person re-identification model under label noise</li>
-      <li><a href="https://github.com/mangye16/ReID-Label-Noise">Code</a></li>
+      <li> Robust deep learning under label noise (limited samples for each identity)</li>
+      <li> Collaborative refining person re-identification model under label noise</li>
+      <li> Online refining with hard instance re-weighting</li>
+      <li> Paper: "PurifyNet: A Robust Person Re-identification Model with Noisy Labels", IEEE TIFS, 2020.</li>
+      <li> Paper: "Collaborative Refining for Person Re-Identification with Label Noise", IEEE TIP, 2021.</li>
     </ul>
 
 
