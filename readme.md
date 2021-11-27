@@ -1,4 +1,4 @@
 ## Intro
 
-this is the home page for MARS (Multimedia Analysis and Reasoning ) Lab
+This is the home page for MARS (Multimedia Analysis and Reasoning ) Lab, led by Professor Mang Ye.
 
