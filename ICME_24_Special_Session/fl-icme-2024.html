@@ -1,0 +1,149 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>FL-ICME'24</title>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<script type="text/javascript">
+function displayDate(dt, showDateDifference) {
+  var hour = dt.getHours();
+  var minute = dt.getMinutes();
+  var temp = '' + ((hour < 10) ? '0' : '') + hour;  //((hour > 12) ? hour - 12 : hour);
+  // if (hour == 0)
+  //   temp = '12';
+  temp += ((minute < 10) ? ':0' : ':') + minute;
+  // temp += (hour >= 12) ? ' PM' : ' AM';
+  if (showDateDifference)
+    temp += (dt.getDay() != dt.getUTCDay() ? ' (+1d)' : '');
+  // temp += dt.getDay()
+  return temp;
+}
+
+function getTimezoneOffset() {
+  var offset = -(new Date()).getTimezoneOffset()/60;
+  var temp = "UTC" + (offset >= 0 ? "+" : "") + offset;
+  return temp;
+}
+
+function getLocalTimezone() {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone + ", " + getTimezoneOffset();
+  }
+  catch(e) {
+    return getTimezoneOffset();
+  }
+}
+
+function writeTimeRange(startTime, endTime, showDateDifference = false) {
+  var startTimeObj = new Date("2021-07-24T" + startTime + ":00.000-04:00");
+  var endTimeObj = new Date("2021-07-24T" + endTime + ":00.000-04:00");
+
+  //return document.write(displayDate(startTimeObj) + " – " + displayDate(endTimeObj) + " (" + getLocalTimezone() +")");
+  return document.write(displayDate(startTimeObj, showDateDifference) + " – " + displayDate(endTimeObj, showDateDifference));
+
+}
+</script>
+
+<head>
+<div class="container">
+    <div align="center">
+<a href="https://2024.ieeeicme.org/" target="_blank"><img border="0" width="100%" src="FL-ICME24/header.jpg"></img></a>
+<p>
+<h3>ICME'24 Special Session on "Trustworthy Federated Learning for Multimedia" (FL-ICME'24)</h3>
+
+<br><b>Final Submission Deadline</b>: <span style="color:red">December 30, 2023</span>
+<br><b>Notification Due</b>: March 12, 2024
+<br><b>Conference Dates</b>: July 15-19, 2024
+<br><b>Venue</b>: Niagara Falls Marriott, Niagara Falls, ON, Canada
+    </div>
+</div>
+</head>
+
+
+<body>
+
+<br>
+
+<div class="container">
+    <h3>Call for Papers</h3>
+    <div class="overview">
+<p>As artificial intelligence (AI) research advances, the key obstacle to widespread AI adoption has shifted from technical challenges to gaining stakeholders' trust. Building AI techniques that are fair, transparent, and robust has been recognized as a viable means of enhancing confidence in AI. However, addressing data privacy and user confidentiality concerns presents an additional layer of complexity. Prominent conferences like ICME have acknowledged the necessity of developing methods that accommodate data privacy protection goals. Stricter regulations such as the GDPR require revising the existing centralized AI training paradigm to ensure regulatory compliance.
+
+<p>Federated Learning (FL) offers a learning paradigm that facilitates collaborative training of machine learning models without sharing data from individual data silos. This approach enables AI to thrive in privacy-focused regulatory environments. FL empowers self-interested data owners to collaboratively train models, making end-users active contributors to AI solutions. Currently, FL relies on a central trusted entity to coordinate co-creators, which can become a single point of failure. The assumption that all co-creators receive the same final FL model regardless of their contributions introduces unfairness and hampers FL adoption. Trustworthy federated learning emerges as a promising direction, fostering open collaboration among FL co-creators while upholding transparency, fairness, and robustness, without compromising sensitive local data.
+
+<p>This special session aims to provide a timely collection of research updates to benefit researchers and practitioners working in trustworthy federated learning systems for multimedia. Topics of interest include but are not limited to:
+<ul>
+	<li>Applications of Federated Learning in Multimedia</li>
+	<li>Auction-based Federated Learning</li>
+	<li>Auditable Federated Learning</li>
+	<li>Client Selection in Federated Learning</li>
+	<li>Data Selection in Federated Learning</li>
+	<li>Decentralized Federated Learning</li>
+	<li>Fairness-Aware Federated Learning</li>
+	<li>Feature Selection in Federated Learning</li>
+	<li>Federated Graph Neural Networks</li>
+	<li>Federated Learning and Foundation Models</li>
+	<li>Federated Learning for Non-IID Data</li>
+	<li>Incentive Mechanisms in Federated Learning Systems</li>
+	<li>Interpretability in Federated Learning</li>
+	<li>Large-Scale Federated Learning</li>
+	<li>Quantum Federated Learning</li>
+	<li>Reputation-aware Federated Learning</li>
+	<li>Robustness for Federated Learning</li>
+	<li>Social Responsibility in Federated Learning Systems</li>
+	<li>Transferable Federated Learning</li>
+	<li>Trustable Federated Learning</li>
+	<li>Verifiable Federated Learning</li>
+</ul>
+
+<p>A PDF version of the call for papers can be downloaded <a href="https://2024.ieeeicme.org/wp-content/uploads/sites/545/ICME_2024CFP1.pdf" target="_blank">here</a>.
+    </div>
+</div>
+
+<br>
+
+<div class="container">
+  <h3>Submission Instructions</h3>
+  <div class="overview">
+<p>Information on paper submission can be found here: <a href="https://2024.ieeeicme.org/author-information-and-submission-instructions/" target="_blank">https://2024.ieeeicme.org/author-information-and-submission-instructions/</a>
+
+<p>All accepted papers will be included in the ICME 2024 proceedings, published on the IEEE Xplore Digital Library.
+    </div>
+</div>
+
+<br>
+
+<div class="container">
+  <h3>Organizers</h3>
+  <div class="overview">
+<ul>
+	<li><a href="https://profiles.uts.edu.au/Guodong.Long" target="_blank">Guodong Long</a> (University of Technology Sydney, Australia)</li>
+	<li><a href="http://hanyu.sg/" target="_blank">Han Yu</a> (Nanyang Technological University, Singapore)</li>
+</ul>
+    </div>
+</div>
+
+<br>
+
+<div class="container">
+  <h3>Organized by</h3>
+  <div class="overview">
+<a href="https://www.uts.edu.au/" target="_blank"><img border="0" height="110" src="FL-ICME24/UTS.png"></img></a> &nbsp
+<a href="https://www.ntu.edu.sg/" target="_blank"><img border="0" height="60" src="FL-ICME24/NTU.png"></img></a> &nbsp
+<a href="https://trustful.federated-learning.org/" target="_blank"><img border="0" height="75" src="FL-ICME24/TrustFUL1.png"></img></a> &nbsp 
+    </div>
+</div>
+
+<br>
+
+<div class="container">
+    <div align="center">
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5a0nqmzu1nu&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+    </div>
+</div>
+
+</body>
+
+</html>
