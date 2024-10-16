@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="MARS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=keywords content="Mang Ye" , "Ye Mang" , "叶茫" , "WHU" , "Wuhan University" , "武汉大学" , "MARS" , "marswhu"
+        , "MARS WHU">
+
+    <title>Projects</title>
+
+    <link href="../../static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../../static/xin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="navbar-brand">
+                    <font color="#ffffff">MARS</a></font>
+                </span>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../publications/index.htm"> Publications </a></li>
+                    <li class="active"><a href="index.htm"> Projects </a></li>
+                    <li><a href="../../team/index.htm">Team</a></li>
+                    <li><a href="../../teaching/index.htm">Teaching</a></li>
+                    <li><a href="../../service/index.htm">Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 50px;">
+        <!-- <p>
+            <br />
+            <i class="bi-arrow-left-circle"></i><small><a href="#">Back</a></small>
+        </p> -->
+        <h3>Re-Identification</h3>
+        <div class="row-project">
+            <div class="span12">
+                <section>
+                    <p>Re-Identification (Re-ID) refers to the task of recognizing and matching individuals across
+                        different camera views or time frames. It addresses the challenge of identifying a individual in
+                        one
+                        image and finding the same individual in another image captured by a different camera, often
+                        under varying lighting, angles, and backgrounds. Re-ID plays a crucial role in applications such
+                        as surveillance, security, and smart city technologies, enhancing the ability to track and
+                        monitor individuals in real-time.
+                    </p>
+                    <p>We construct datasets and consistently exploring different data modalities in Re-ID tasks such as
+                        Person Re-ID and Wildlife Re-ID. We also
+                        discuss privacy concerns in Re-ID settings.</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="page-header">
+            <h3><i>Highlight: Survey and Baseline</i></h3>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="thumbnail">
+                    <img class="scale-img" src="../images/ReID/ReID.png" alt="">
+                </div>
+            </div>
+            <div class="span9">
+                <div class="pub-entry">
+                    <div class="pub-info">
+                        <div class="pub-title"><strong>Transformer for Object Re-Identification: A Survey</strong></div>
+                        <div class="pub-authors"><u>Mang Ye*</u>, Shuoyi Chen, Chenyue Li, Wei-Shi Zheng, David
+                            Crandall, Bo Du</div>
+                        <div class="pub-venue"><i>preprint.</i></div>
+
+                        <br>
+                        We provides <b>a comprehensive review and in-depth analysis of the Transformer-based Re-ID</b>.
+                        In
+                        categorizing existing works into Image/Video-Based Re-ID, Re-ID with limited data/annotations,
+                        Cross-Modal Re-ID, and
+                        Special Re-ID Scenarios, we thoroughly elucidate the advantages demonstrated by the Transformer
+                        in addressing a multitude of challenges
+                        across these domains. Besides, we propose <b>a new Transformer baseline, UntransReID</b>,
+                        achieving
+                        state-of-the-art performance on both single-/cross modal tasks. Besides, this survey also covers
+                        a wide range of Re-ID research
+                        objects, including progress in animal Re-ID. Given the diversity of species in animal Re-ID, we
+                        devise a standardized experimental benchmark
+                        and conduct extensive experiments to explore the applicability of Transformer for this task to
+                        facilitate future research.
+
+                        <div class="pub-description">
+                            <a href="https://arxiv.org/pdf/2401.06960.pdf" target="_blank"><span
+                                    class="label_download">Paper</span></a>
+                            <a href="https://github.com/JigglypuffStitch/Animal-Re-ID" target="_blank"><span
+                                    class="label_download">Code</span></a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="thumbnail">
+                    <img class="scale-img" src="../images/ReID/TPAMI21_AGW.png" alt="">
+                </div>
+            </div>
+            <div class="span9">
+                <div class="pub-entry">
+
+                    <div class="pub-info">
+                        <div class="pub-title"><strong>Deep Learning for Person Re-identification: A Survey and
+                                Outlook</strong></div>
+                        <div class="pub-authors"><u>Mang Ye*</u>, Jianbing Shen, Gaojie Lin, Tao Xiang, Ling Shao,
+                            Steven C. H. Hoi.</div>
+                        <div class="pub-venue"><i>IEEE Transactions on Pattern Analysis and Machine Intelligence
+                                (TPAMI), 2021.</i>
+                        </div>
+
+                        <br>
+                        We build: <b>(1) A comprehensive survey</b> with in-depth analysis for closed- and open-world
+                        person Re-ID in recent years (2016-2020).
+                        <b>(2) A new evaluation metric</b>, namely mean Inverse Negative Penalty (mINP), which measures
+                        the ability to find the hardest correct match.
+                        <b>(3) A new AGW baseline</b> with non-local Attention block, Generalized mean pooling and
+                        Weighted regularization triplet. It acheieves competitive performance on FOUR challenging Re-ID
+                        tasks,
+                        including single-modality image-based Re-ID, video-based Re-ID, Partial Re-ID and cross-modality
+                        Re-ID.
+
+                        <div class="pub-description">
+                            <a href="https://ieeexplore.ieee.org/document/9336268" target="_blank"> <span
+                                    class="label_download">Paper</span></a>
+
+                            <a href="https://github.com/mangye16/ReID-Survey" target="_blank"> <span
+                                    class="label_download">Code</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-header">
+            <h3><i>Highlight: Wildlife Re-ID</i></h3>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="thumbnail">
+                    <img class="scale-img" src="../images/ReID/ECCV24_AdaFreq.png" alt="">
+                </div>
+            </div>
+            <div class="span9">
+                <div class="pub-entry">
+                    <div class="pub-info">
+                        <div class="pub-title"><strong>Adaptive High-Frequency Transformer for Diverse Wildlife
+                                Re-Identification</strong></div>
+                        <div class="pub-authors"> Chenyue Li<sup>#</sup>, Shuoyi Chen<sup>#</sup>, <u>Mang Ye*</u>
+                        </div>
+                        <div class="pub-venue"><i>European Conference on Computer Vision (ECCV), 2024.</i>
+                        </div>
+
+                        <br>
+                        We present a unified, multi-species general framework for wildlife ReID. Given that
+                        high-frequency information is a consistent representation of unique features in various species,
+                        significantly
+                        aiding in identifying contours and details such as fur textures, we propose the Adaptive
+                        High-Frequency Transformer model with the goal
+                        of enhancing high-frequency information learning. To mitigate the inevitable high-frequency
+                        interference in the wilderness environment, we
+                        introduce an object-aware high-frequency selection strategy to adaptively capture more valuable
+                        high-frequency components. Notably, we
+                        unify the experimental settings of multiple wildlife datasets for ReID,
+                        achieving superior performance over state-of-the-art ReID methods.
+
+                        <div class="pub-description">
+                            <a href="../../publications/files/ECCV_2024_Wildlife_Re_ID.pdf" target="_blank"><span
+                                    class="label_download">Paper</span></a>
+                            <a href="https://github.com/JigglypuffStitch/AdaFreq" target="_blank"><span
+                                    class="label_download">Code</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-header">
+            <h3><i>Highlight: Multimodal Re-ID</i></h3>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="thumbnail">
+                    <img class="scale-img" src="../images/ReID/CVPR24_multimodal_ReID.png" alt="">
+                </div>
+            </div>
+            <div class="span9">
+                <div class="pub-entry">
+                    <div class="pub-info">
+                        <div class="pub-title"><strong>All in One Framework for Multimodal Re-identification in the
+                                Wild</strong></div>
+                        <div class="pub-authors">He Li, <u>Mang Ye*</u>, Ming Zhang, Bo Du</div>
+                        <div class="pub-venue"><i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+                                Recognition (CVPR), 2024.</i>
+                        </div>
+
+                        <br />
+                        We design a novel multimodal ReID framework, which innovatively integrates a pre-trained
+                        foundation model and a multimodal tokenizer into ReID tasks, complemented a missing modality
+                        synthesis strategy, and three cross-modal heads to learn a unified multimodal model.
+                        <b>(RGB-Sketch-IR-Text)</b>
+
+                        <div class="pub-description">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_All_in_One_Framework_for_Multimodal_Re-identification_in_the_Wild_CVPR_2024_paper.pdf"
+                                target="_blank"> <span class="label_download">Paper</span></a>
+                            <a href="https://github.com" target="_blank"> <span class="label_download">Code</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="thumbnail">
+                    <img class="scale-img" src="../images/ReID/TPAMI23_SketchTran+.png" alt="">
+                </div>
+            </div>
+            <div class="span9">
+                <div class="pub-entry">
+                    <div class="pub-info">
+                        <div class="pub-title"><strong>SketchTrans: Disentangled Prototype Learning with Transformer for
+                                Sketch-Photo Recognition</strong></div>
+                        <div class="pub-authors">Cuiqun Chen, <u>Mang Ye*</u>, Meibin Qi, Bo Du </div>
+                        <div class="pub-venue"><i>IEEE Transactions on Pattern Analysis & Machine Intelligence,
+                                2023.</i>
+                        </div>
+
+                        <br />
+                        We propose a novel information-aligned transformer framework (SketchTrans+) with disentangled
+                        prototype learning to handle modality differences for sketch-photo recognition and
+                        re-identification. <b>(RGB-Sketch)</b>
+
+                        <div class="pub-description">
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10328884" target="_blank">
+                                <span class="label_download">Paper</span></a>
+                            <a href="https://github.com/ccq195/SketchTrans" target="_blank"> <span
+                                    class="label_download">Code</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="thumbnail">
+                    <img class="scale-img" src="../images/ReID/TPAMI23_CAJ.png" alt="">
+                </div>
+            </div>
+            <div class="span9">
+                <div class="pub-entry">
+                    <div class="pub-info">
+                        <div class="pub-title"><strong>Channel Augmentation for Visible-Infrared
+                                Re-Identification</strong></div>
+                        <div class="pub-authors"><u>Mang Ye*</u>, Zesen Wu, Cuiqun Chen, Bo Du </div>
+                        <div class="pub-venue"><i>IEEE Transactions on Pattern Analysis & Machine Intelligence,
+                                2023.</i>
+                        </div>
+
+                        <br />
+                        We propose an unsupervised augmentation association baseline, which effectively estimates the
+                        cross-modality labels with modality-specific clustering and cross-modal mutual association. It
+                        verifies the effectiveness and application for unsupervised VI-ReID. <b>(RGB-IR)</b>
+
+                        <div class="pub-description">
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10319076" target="_blank">
+                                <span class="label_download">Paper</span></a>
+                            <a href="https://github.com/zesenwu23/caj" target="_blank"> <span
+                                    class="label_download">Code</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="thumbnail">
+                    <img class="scale-img" src="../images/ReID/CVPR24_IRRA.png" alt="">
+                </div>
+            </div>
+            <div class="span9">
+                <div class="pub-entry">
+                    <div class="pub-info">
+                        <div class="pub-title"><strong>Cross-Modal Implicit Relation Reasoning and Aligning for
+                                Text-to-Image Person Retrieval</strong></div>
+                        <div class="pub-authors">Ding Jiang, <u>Mang Ye*</u></div>
+                        <div class="pub-venue"><i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+                                Recognition (CVPR), 2023.</i>
+                        </div>
+                        <br />
+                        We present IRRA: a cross-modal Implicit Relation Reasoning and Aligning framework that learns
+                        relations between local visual-textual tokens and enhances global image-text matching without
+                        requiring additional prior supervision. <b>(RGB-Text)</b>
+
+                        <div class="pub-description">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Jiang_Cross-Modal_Implicit_Relation_Reasoning_and_Aligning_for_Text-to-Image_Person_Retrieval_CVPR_2023_paper.pdf"
+                                target="_blank"> <span class="label_download">Paper</span></a>
+                            <a href="https://github.com/anosorae/IRRA" target="_blank"> <span
+                                    class="label_download">Code</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-header">
+            <h3><i>Highlight: Large-Scale Dataset</i></h3>
+        </div>
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="thumbnail">
+                    <img class="scale-img" src="../images/ReID/MM21_WePerson.png" alt="">
+                </div>
+            </div>
+            <div class="span9">
+                <div class="pub-entry">
+
+                    <div class="pub-info">
+                        <div class="pub-title"><strong>WePerson: Learning a Generalized Re-identification Model from
+                                All-weather Virtual Data</strong></div>
+                        <div class="pub-authors">He Li, <u>Mang Ye</u>*, Bo Du.</div>
+                        <div class="pub-venue"><i>ACM International Conference on Multimedia (ACM MM), 2021.</i>
+                        </div>
+
+                        <br>
+                        This is <b>the first large-scale synthesized Re-ID dataset that considers various weather
+                            effects.</b>
+                        It allows factor-by-factor dissection for the domain generalizable feature learning, which is
+                        important for Re-ID model deployment under wild application scenarios.
+
+                        <div class="pub-description">
+                            <a href="https://dl.acm.org/doi/pdf/10.1145/3474085.3475455" target="_blank"> <span
+                                    class="label_download">Paper</span></a>
+
+                            <a href="https://github.com/lihe404/WePerson" target="_blank"> <span
+                                    class="label_download">Code</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-header">
+            <h3><i>Highlight: Privacy-Preserving ReID</i></h3>
+        </div>
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="thumbnail">
+                    <img class="scale-img" src="../images/ReID/TIFS24_SecureReID.png" alt="">
+                </div>
+            </div>
+            <div class="span9">
+                <div class="pub-entry">
+                    <div class="pub-info">
+                        <div class="pub-title"><strong>SecureReID: Privacy-Preserving Anonymization for Person
+                                Re-Identification</strong></div>
+                        <div class="pub-authors"><u>Mang Ye*</u>, Wei Shen, Junwu Zhang, Yao Yang, Bo Du</div>
+                        <div class="pub-venue"><i>IEEE Transactions on Information Forensics and Security (TIFS), 2024
+                            </i></div>
+
+                        <br>
+                        We introduce the Identity-Specific Encrypt-Decrypt (ISED) architecture to deal with the risks
+                        posed by model attacks for enhanced security. The ISED encrypts the anonymized images with
+                        random deviations based on specific keys assigned to each identity. It effectively protects
+                        sensitive data within the original images, rendering them computationally inaccessible to
+                        potential attackers and effectively preventing model attacks.
+
+                        <div class="pub-description">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10409614" target="_blank"> <span
+                                    class="label_download">Paper</span>
+                            </a>
+                            <a href="https://github.com/shentt67/SecureReID" target="_blank"> <span
+                                    class="label_download">Code</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="thumbnail">
+                    <img class="scale-img" src="../images/ReID/MM22_privacy_ReID.png" alt="">
+                </div>
+            </div>
+            <div class="span9">
+                <div class="pub-entry">
+
+                    <div class="pub-info">
+                        <div class="pub-title"><strong>Learnable Privacy-Preserving Anonymization for Pedestrian
+                                Images</strong></div>
+                        <div class="pub-authors">Junwu Zhang, <u>Mang Ye*</u>, Yao Yang</div>
+                        <div class="pub-venue"><i>ACM International Conference on Multimedia (ACM MM), 2022.</i>
+                        </div>
+
+                        <br>
+                        We are <b>the first to explore the privacy-utility trade-off for pedestrian images from a Re-ID
+                            perspective</b>, in which anonymized images cannot be recognized by third parties, but are
+                        recoverable for authorized users and suitable for person re-identification research.
+
+                        <div class="pub-description">
+                            <a href="https://arxiv.org/pdf/2207.11677.pdf" target="_blank"> <span
+                                    class="label_download">Paper</span></a>
+                            <a href="https://github.com/whuzjw/privacy-reid" target="_blank"> <span
+                                    class="label_download">Code</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <p></p>
+        </section>
+
+        <!-- <footer class="footer">
+            <div class="container">
+                <p class="pull-right">
+                    Share This Page <br />
+                    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    
+                    
+                    <div class="g-plusone" data-size="medium"></div>
+                    
+                    <div id="fb-root"></div>
+                </p>
+                <p>Copyright &copy 2021 <a href="https://marswhu.github.io/">Multimedia Analysis & Reasoning (MARS) Lab</a></p>
+                <p><a href="http://www.cuhk.edu.hk/english/index.html">Wuhan University 武汉大学</a></p>
+            </div>
+        </footer> -->
+
+        <div align="center">
+            <small>Copyright &copy 2024 <a href="https://marswhu.github.io/">Multimedia Analysis & Reasoning (MARS)
+                    Lab</a></small>
+            <br>
+            <small><a href="http://www.cuhk.edu.hk/english/index.html">Wuhan University 武汉大学</a></small>
+        </div>
+    </div>
+
+
+    <script src="../../static/jquery.js"></script>
+    <script src="../../static/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
