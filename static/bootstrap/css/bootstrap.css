@@ -4440,10 +4440,10 @@ a.list-group-item.active > .badge,
   max-width: 100%;
   height: auto;
 }
-a.thumbnail:hover,
+/* a.thumbnail:hover,
 a.thumbnail:focus {
   border-color: #428bca;
-}
+} */
 .thumbnail > img {
   margin-left: auto;
   margin-right: auto;
@@ -6172,9 +6172,9 @@ td.visible-print {
 }
 
 .scale-img{
-  transition: all 0.2s linear;
+  transition: all 0.15s linear;
 }
 .scale-img:hover{
   transform: scale(5);
-  transition: all 0.2s linear;
+  transition: all 0.15s linear;
 }
